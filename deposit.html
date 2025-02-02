@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+   
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/48.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
+
+    <title>choose payment method</title>
+</head>
+
+<body>
+
+    <!-- preloade -->
+    <!-- <div class="preload preload-container">
+        <div class="preload-logo" style="background-image: url('images/logo/144.png')">
+            <div class="spinner"></div>
+        </div>
+    </div> -->
+    <!-- /preload --> 
+
+    <div class="header fixed-top bg-surface d-flex justify-content-center align-items-center">
+        <a href="javascript:void(0);" class="left back-btn"><i class="icon-left-btn"></i></a>
+        <h3>Choose Deposit method</h3>
+    </div>
+    <div class="pt-45 pb-16">
+        <div class="tf-container">
+            <ul class="mt-20 row">
+                <div class="col-6 active">
+                    <li class="">
+                        <a href="#" class="accent-box item-check-style3 bg-menuDark" data-target="#cryptoScreen">
+                            <label for="radio1" class="content d-flex justify-content-between">
+                                <div class="flex-grow-1">
+                                    <span class="text-small">Choose to deposit via</span>
+                                    <h5 class="mt-8 d-flex align-items-center gap-4"><i class="icon-wallet icon"></i>Crypto</h5>
+                                </div>
+                            </label>
+                            <!-- <input type="radio" class="tf-radio style-2 flex-shrink-0" name="radio" id="radio1"> -->
+                        </a>
+                        
+                    </li>
+                </div>
+                <div class="col-6">
+                    <li class="">
+                        <a href="#" class="accent-box item-check-style3 bg-menuDark" data-target="#voucherScreen">
+                            <label for="radio2" class="content">
+                                <div class="flex-grow-1">
+                                    <span class="text-small">Choose to deposit via</span>
+                                    <h5 class="mt-8 d-flex align-items-center gap-4"><i class="icon-wallet icon"></i>Voucher</h5>
+                                </div>
+                            </label>
+                            <!-- <input type="radio" class="tf-radio style-2 flex-shrink-0" name="radio" id="radio2" checked> -->
+                        </a>
+                    </li>
+                </div>
+                
+            </ul>
+        </div>
+    </div>
+
+    <div class="pt-45 pb-90">
+        <div class="tf-container screen" id="cryptoScreen">
+            <div class="mt-4 accent-box-v2 bg-menuDark">
+                <div class="d-flex justify-content-end align-items-center">
+                    <h5 class="d-flex align-items-center gap-4"><i class="icon-wallet icon"></i> $3.466,9</h5>
+                </div>
+                <div class="mt-12 mb-12 box-input-field">
+                    <input type="text" value="50" required class="clear-ip value_input ip-style2">
+                    <i class="icon-close"></i>
+                </div>
+                <span>Input amount to deposit</span>
+            </div>
+            <h5 class="mt-20">Select Amount</h5>
+            <ul class="grid-3 gap-12 mt-16">
+                <li><a href="javascript:void(0);" class="tag-money text-small">$50</span></a></li>
+                <li><a href="javascript:void(0);" class="tag-money text-small">$100</span></a></li>
+                <li><a href="javascript:void(0);" class="tag-money text-small">$200</span></a></li>
+                <li><a href="javascript:void(0);" class="tag-money text-small">$500</span></a></li>
+                <li><a href="javascript:void(0);" class="tag-money text-small">$1000</span></a></li>
+                <li><a href="javascript:void(0);" class="tag-money text-small">$2000</span></a></li>
+            </ul>
+            
+            <div class="menubar-footer footer-fixed bg-surface">
+                <div class="inner-bar">
+                    <a href="success.html" class="tf-btn lg primary">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="tf-container screen" id="voucherScreen">
+            <div class="mt-4 accent-box-v2 bg-menuDark">
+                <div class="d-flex justify-content-end align-items-center">
+                    <h5 class="d-flex align-items-center gap-4"><i class="icon-wallet icon"></i> $3.466,9</h5>
+                </div>
+                <div class="mt-12 mb-12 box-input-field">
+                    <input type="text" value="15678923401" required class="clear-ip value_input ip-style2">
+                    <i class="icon-close"></i>
+                </div>
+                <span>Input your voucher code</span>
+            </div>
+
+            <div class="menubar-footer footer-fixed bg-surface">
+                <div class="inner-bar">
+                    <a href="success.html" class="tf-btn lg primary">Confirm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <style>
+        .active-border {
+            border: 2px solid green;
+            border-radius: 10px;
+        }
+
+        /* Hide screens by default */
+        .screen {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Handle clicking on deposit options (Crypto, Voucher)
+            $("ul li a.accent-box").on("click", function (e) {
+                e.preventDefault();
+        
+                // Remove active-border from all options
+                $("ul li a.accent-box").removeClass("active-border");
+        
+                // Add active-border to the clicked option
+                $(this).addClass("active-border");
+        
+                // Hide all screens
+                $(".screen").hide();
+        
+                // Show the corresponding screen
+                var target = $(this).data("target");
+                $(target).fadeIn();
+            });
+        
+            // Handle clicking on money options in Crypto screen
+            $(".tag-money").on("click", function (e) {
+                e.stopPropagation();  // Prevent click from affecting the parent option
+                e.preventDefault();   // Prevent default link behavior
+        
+                // Remove active class from all money options
+                $(".tag-money").removeClass("active");
+        
+                // Add active class to the clicked money option
+                $(this).addClass("active");
+            });
+        });
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet"type="text/css" href="css/styles.css"/>
+
+   
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/48.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
+
+    <title>earn</title>
+</head>
+
+<body class="app-wallet">
+
+    <div class="header-style2 fixed-top d-flex align-items-center justify-content-between bg-surface">
+        <h3 class="d-flex gap-12">
+            <!-- <a href="exchange-market.html" class="text-secondary">Market</a> -->
+            <a href="#">Earn</a>
+        </h3>
+        <i class="icon-question text-white"></i>
+    </div>
+    <div class="pt-55 pb-120">
+        <div class="tf-container">
+            <div class="tf-tab pt-12 mt-4">
+                <div class="tab-slide trade-tab">
+                    <ul class="nav nav-tabs wallet-tabs" role="tablist" >
+                        <li class="item-slide-effect"></li>
+                        <li class="nav-item active" role="presentation">   
+                            <button class="nav-link active"  data-bs-toggle="tab" data-bs-target="#link">Convert & Link</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#order">Voucher</button>
+						</li>    
+                    </ul>
+                </div>
+                <div class="tab-content pt-16 pb-16">
+					<div class="tab-pane fade active show" id="link" role="tabpanel">
+                        <div class="trade-box">
+                            <div class="accent-box bg-menuDark">
+                                <div class="text-small d-flex justify-content-between">
+                                    <p class="text-white">Pay</p>
+                                    <p class="d-flex align-items-center gap-20">
+                                        <span class="d-flex align-items-center gap-4">
+                                            <i class="icon-wallet fs-24"></i>
+                                            5,988
+                                        </span>
+                                        <span class="text-primary">Max</span>
+                                    </p>
+                                </div>
+                                <div class="coin-item style-1 gap-8 mt-20">
+                                    <img src="images/coin/coin-3.jpg" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <h3 class="mb-4"><a href="#" class="d-flex align-items-center choose-account" data-bs-toggle="modal"
+                                                data-bs-target="#accountWallet"><span class="dom-header">WLB</span><i class="icon-select-down"></i></a></h3>
+                                            <span class="dom-text">Wallet Balance</span>
+                                        </div>
+                                        <div class="box-price text-end">
+                                            <input type="text" class="border-1 mb-2" placeholder="Enter amount" id="inputField1" style="max-width: 150px">
+                                            <!-- <h3 class="mb-4">1</h3> -->
+                                            <p class="d-flex align-items-center gap-1 justify-content-end" style="color: green">5%
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="green"><path d="M5 3V19H21V21H3V3H5ZM20.2929 6.29289L21.7071 7.70711L16 13.4142L13 10.415L8.70711 14.7071L7.29289 13.2929L13 7.58579L16 10.585L20.2929 6.29289Z"></path></svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="round-swap"><i class="icon icon-clockwise"></i></div>
+                            <div class="accent-box bg-menuDark mt-8">
+                                <div class="text-small d-flex justify-content-between">
+                                    <p class="text-white">Receive</p>
+                                    <span class="d-flex align-items-center gap-4">
+                                        <i class="icon-wallet fs-24"></i>
+                                        0,031025
+                                    </span>
+                                </div>
+                                <div class="coin-item style-1 gap-8 mt-20">
+                                    <img src="images/coin/coin-3.jpg" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <h3 class="mb-4"><a href="#" class="d-flex align-items-center choose-account" data-bs-toggle="modal"
+                                                data-bs-target="#accountWallet2"><span class="dom-headerr">RFB</span><i class="icon-select-down"></i></a></h3>
+                                            <span class="dom-textt">Referral Balance</span>
+                                        </div>
+                                        <div class="box-price text-end">
+                                            <h3 class="mb-4" id="inputReceiver"></h3>
+                                            <p class="d-flex align-items-center gap-1" style="color: green">5%
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="green"><path d="M5 3V19H21V21H3V3H5ZM20.2929 6.29289L21.7071 7.70711L16 13.4142L13 10.415L8.70711 14.7071L7.29289 13.2929L13 7.58579L16 10.585L20.2929 6.29289Z"></path></svg>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<button class="tf-btn lg mt-20 btn-" id="swap-btn">Swap</button>
+                        <!-- <ul class="mt-20 accent-box line-border">
+                            <li class="trade-list-item mb-12">
+                                
+                            </li>
+                        </ul>
+                        <h5>Recent swap history</h5> -->
+                        <div class="p-2 line-border accent-box mt-20">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Amount</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Timestamp</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="swap-history">
+                                    <!-- Swap records will be added here -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+
+					</div>
+					<div class="tab-pane fade" id="order" role="tabpanel">
+						<div class="trade-box">
+                            <div class="accent-box bg-menuDark">
+                                <div class="text-small d-flex justify-content-between">
+                                    <p class="text-white">Pay</p>
+                                    <p class="d-flex align-items-center gap-20">
+                                        <span class="d-flex align-items-center gap-4">
+                                            <i class="icon-wallet fs-24"></i>
+                                            5,988
+                                        </span>
+                                        <span class="text-primary">Max</span>
+                                    </p>
+                                </div>
+                                <!-- <p class="text-small text-white">Sell</p> -->
+                                <div class="coin-item style-1 gap-8 mt-20">
+                                    <img src="images/coin/coin-6.jpg" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <h3 class="mb-4"><a href="#" class="d-flex align-items-center choose-account" data-bs-toggle="modal"
+                                                data-bs-target="#accountWallet"><span class="dom-header">WLB</span><i class="icon-select-down"></i></a></h3>
+                                            <span class="dom-text">Wallet Balance</span>
+                                        </div>
+                                        <div class="box-price text-end d-flex flex-column gap-2">
+                                            <span>$9.357,1</span>
+                                            <input type="text" class="border-1 mb-2" placeholder="Enter amount" id="inputField" style="max-width: 150px">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="round-swap"><i class="icon icon-clockwise"></i></div>
+                            <div class="accent-box bg-menuDark mt-8">
+                                <!-- <p class="text-small text-white">Pay</p> -->
+                                <div class="coin-item style-1 gap-8 mt-20">
+                                    <img src="images/coin/coin-5.jpg" alt="img" class="img">
+                                    <div class="content">
+                                        <div class="title">
+                                            <h3 class="mb-4"><p class="d-flex align-items-center">VCH</p></h3>
+                                            <span>Voucher</span>
+                                        </div>
+                                        <div class="box-price text-end">
+                                            <!-- <p>$6,24 (-99,93%)</p> -->
+                                            <h3 class="mb-4" id="outputDiv"></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="mt-20 tf-btn lg dark text-secondary btn">Generate Voucher</button>
+                        <ul class="mt-4 accent-box bg-menuDark">
+                            <li class="trade-list-item">
+                                 <p class="text-xsmall">Voucher details</p>
+                                 <!-- <p class="text-xsmall text-primary">Use market price</p>   -->
+                            </li>
+                            <li class="mt-16">
+                                <div class="pb-4 line-bt d-flex justify-content-between">
+                                    <h5 class="text-white">1234567890</h5>
+                                    <!-- <p class="d-flex align-items-center gap-8 text-white text-small">USDC <i class="icon-clockwise2 fs-12 text-secondary"></i></p>  -->
+                                </div>
+                                <p class="mt-4 text-xsmall text-danger">You can reset the Voucher or sell to other user</p>
+                                  
+                            </li>
+                            <li class="mt-16">
+                                <!-- data-bs-toggle="modal" data-bs-target="#filterDay" <i class="icon-arr-right fs-8 text-secondary"></i>-->
+                                 <a href="#" class="trade-list-item" >
+                                    <span class="text-secondary">Due later</span>
+                                    <span class="text-secondary">7 Days</span>
+                                 </a>
+                            </li>
+                         
+                        </ul>
+                        <div class="p-2 line-border accent-box mt-20">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Amount</th>
+                                        <th>Voucher</th>
+                                        <th>From</th>
+                                        <th>To</th>
+                                        <th>Timestamp</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="swap-history">
+                                    <tr>
+                                        <td>$100</td>
+                                        <td>1234567890</td>
+                                        <td>Wallet Balance</td>
+                                        <td>Voucher</td>
+                                        <td>2/2/2025, 11:17:50 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$50</td>
+                                        <td>4567890321</td>
+                                        <td>Referral Balance</td>
+                                        <td>Voucher</td>
+                                        <td>2/1/2025, 09:17:50 AM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$150</td>
+                                        <td>0192837465</td>
+                                        <td>Wallet Balance</td>
+                                        <td>Voucher</td>
+                                        <td>7/5/2025, 08:25:50 AM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+					</div>
+				</div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="menubar-footer footer-fixed">
+        <ul class="inner-bar">
+            <li>
+                <a href="home.html">
+                    <i class="icon icon-home2"></i>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="exchange-market.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                        fill="rgba(126,128,136,1)">
+                        <path
+                            d="M21 13.2422V20H22V22H2V20H3V13.2422C1.79401 12.435 1 11.0602 1 9.5C1 8.67286 1.22443 7.87621 1.63322 7.19746L4.3453 2.5C4.52393 2.1906 4.85406 2 5.21132 2H18.7887C19.1459 2 19.4761 2.1906 19.6547 2.5L22.3575 7.18172C22.7756 7.87621 23 8.67286 23 9.5C23 11.0602 22.206 12.435 21 13.2422ZM19 13.9725C18.8358 13.9907 18.669 14 18.5 14C17.2409 14 16.0789 13.478 15.25 12.6132C14.4211 13.478 13.2591 14 12 14C10.7409 14 9.5789 13.478 8.75 12.6132C7.9211 13.478 6.75911 14 5.5 14C5.331 14 5.16417 13.9907 5 13.9725V20H19V13.9725ZM5.78865 4L3.35598 8.21321C3.12409 8.59843 3 9.0389 3 9.5C3 10.8807 4.11929 12 5.5 12C6.53096 12 7.44467 11.3703 7.82179 10.4295C8.1574 9.59223 9.3426 9.59223 9.67821 10.4295C10.0553 11.3703 10.969 12 12 12C13.031 12 13.9447 11.3703 14.3218 10.4295C14.6574 9.59223 15.8426 9.59223 16.1782 10.4295C16.5553 11.3703 17.469 12 18.5 12C19.8807 12 21 10.8807 21 9.5C21 9.0389 20.8759 8.59843 20.6347 8.19746L18.2113 4H5.78865Z">
+                        </path>
+                    </svg>
+                    <!-- <i class="icon icon-exchange"></i> -->
+                    Markets
+                </a>
+            </li>
+            <li>
+                <a href="earn.html">
+                    <i class="icon icon-earn"></i>
+                    Earn
+                </a>
+            </li>
+            <li>
+                <a href="teams.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                        fill="rgba(126,128,136,1)">
+                        <path
+                            d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.4023 13.7511 13.0963 12.1763 13.0051L12 13C10.4023 13 9.09634 14.2489 9.00509 15.8237L9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z">
+                        </path>
+                    </svg>
+                    Team
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                        fill="rgba(126,128,136,1)">
+                        <path
+                            d="M21.0082 3C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082ZM20 5H4V19H20V5ZM18 15V17H6V15H18ZM12 7V13H6V7H12ZM18 11V13H14V11H18ZM10 9H8V11H10V9ZM18 7V9H14V7H18Z">
+                        </path>
+                    </svg>
+                    Profile
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- connect wallet -->
+    <div class="modal fade action-sheet" id="connectWallet">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="icon-cancel" data-bs-dismiss="modal" aria-hidden="true"></span>
+                </div>
+                <div class="modal-body text-center">
+                    <span class="logo icon-wallet"></span>
+                    <h3 class="mt-4">Connect Wallet</h3>
+                    <p class="mt-12 text-white text-large">Please connect by entering an existing wallet or create a new one.</p>
+                    <div class="mt-32">
+                        <a href="javascript:void(0);" class="tf-btn sm secondary d-inline-flex" data-bs-toggle="modal" data-bs-target="#keyWallet">Create wallet</a>
+                        <a href="javascript:void(0);" class="mt-12 tf-btn sm dark d-inline-flex" data-bs-toggle="modal" data-bs-target="#keyWallet">Enter a wallet</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- key wallet -->
+    <div class="modal fade action-sheet" id="keyWallet">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Select input method</span>
+                    <span class="icon-cancel" data-bs-dismiss="modal" aria-hidden="true"></span>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
+                            <div class="content">
+                                <h5><a href="#">Keyless wallet</a></h5>
+                                <p class="mt-8 text-small text">Create an MPC wallet with your platform account.</p>
+                            </div>
+                            <span class="icon icon-mpc"></span>
+                        </li>
+                        <li class="mt-8 accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
+                            <div class="content">
+                                <h5><a href="#">Seed phrase</a></h5>
+                                <p class="mt-8 text-small text">Create wallet using seed phrase</p>
+                            </div>
+                            <span class="icon icon-phrase"></span>
+                        </li>
+                        <li class="mt-8 accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
+                            <div class="content">
+                                <h5><a href="#">Hardware wallet connection</a></h5>
+                                <p class="mt-8 text-small text">Connect hardware wallet via bluetooth</p>
+                            </div>
+                            <span class="icon icon-bluetooth"></span>
+                        </li>
+                        <li class="mt-8 accent-box-v3 bg-surface tf-list-item-v3" data-bs-toggle="modal" data-bs-target="#inflation">
+                            <div class="content">
+                                <h5><a href="#">Private key</a></h5>
+                                <p class="mt-8 text-small text">Paste or enter private key</p>
+                            </div>
+                            <span class="icon-key"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <!-- custom -->
+    <div class="modal fade action-sheet" id="inflation">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>inflation</span>
+                    <span class="icon-cancel" data-bs-dismiss="modal" aria-hidden="true"></span>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li class="accent-box-v3 bg-surface">
+                            <h5><a href="#">Automatic (1%)</a></h5>
+                            <p class="mt-8 text-small text">automatically set slippage for successful trading. The value set automatically changes in real time depending on the price.</p>
+                        </li>
+                        <li class="mt-8 accent-box-v3 bg-surface">
+                            <h5><a href="#">Custom (Single String)</a></h5>
+                            <p class="mt-8 text-small text">slippage rate affects the chances of a successful trade and the final price</p>
+                        </li>
+                    </ul>
+                    <a href="exchange-trade-approve.html" class="mt-32 tf-btn sm secondary">Confirm</a>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+    <!--chart detail  -->
+    <div class="modal fade action-sheet" id="detailChart">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="box-detail-chart">
+                    <div class="top">
+                        <h3 class="d-flex align-items-center gap-8">ETH/USDC <i class="icon-clockwise2 fs-16 text-secondary"></i></h3>
+                        <h2 class="mt-4">1.845,9128</h2>
+                        <p class="mt-4"><a class="text-red">-0,92</a>&emsp;Last 24 hours</p>
+                    </div>
+                    <div class="content">
+                        <div class="tab-content mt-8 mb-16">
+                            <div class="tab-pane fade" id="1h" role="tabpanel">
+                                <div class="area-chart-1"></div>
+                            </div>
+                            <div class="tab-pane fade show active" id="1d" role="tabpanel">
+                                <div class="area-chart-2"></div>
+                            </div>
+                            <div class="tab-pane fade" id="1w" role="tabpanel">
+                                <div class="area-chart-3"></div>
+                            </div>
+                            <div class="tab-pane fade" id="1m" role="tabpanel">
+                                <div class="area-chart-4"></div>  
+                            </div>
+                            <div class="tab-pane fade" id="6m" role="tabpanel">
+                                <div class="area-chart-5"></div>     
+                            </div>
+                            <div class="tab-pane fade" id="1y" role="tabpanel">
+                                <div class="area-chart-6"></div>    
+                            </div>
+                        </div>
+                        <ul class="tab-time" role="tablist">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#1h"  role="tab" aria-controls="1h" aria-selected="false">1H</a> 
+                            </li>
+                            <li class="nav-item active">
+                                <a href="#" class="nav-link active" data-bs-toggle="tab" data-bs-target="#1d" role="tab" aria-controls="1d" aria-selected="true">1D</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#1w" role="tab" aria-controls="1w" aria-selected="false">1W</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#1m" role="tab" aria-controls="1m" aria-selected="false">1M</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#6m" role="tab" aria-controls="6m" aria-selected="false">6M</a> 
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-bs-toggle="tab" data-bs-target="#1y" role="tab" aria-controls="1y" aria-selected="false">1Y</a> 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom">
+                        <h6 class="text-button">Token information</h6>
+                        <ul class="mt-16 d-flex gap-16">
+                            <li class="flex-1">
+                                <a href="#" class="accent-box-v6 bg-surface d-flex justify-content-between align-items-center">
+                                    <div class="content">
+                                        <p class="text-small">ETH <span class="text-extra-small text-secondary">/ Ethereum</span></p>
+                                        <span class="d-inline-block mt-8 coin-btn decrease">+1,62%</span>
+                                    </div>
+                                    <span class="icon-arr-right fs-12"></span>
+                                </a>
+                            </li>
+                            <li class="flex-1">
+                                <a href="#" class="accent-box-v6 bg-surface d-flex justify-content-between align-items-center">
+                                    <div class="content">
+                                        <p class="text-small">USDC </p>
+                                        <span class="d-inline-block mt-8 coin-btn increase">+1,62%</span>
+                                    </div>
+                                    <span class="icon-arr-right fs-12"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                  
+                    
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    
+    <!-- modal filter day-->
+    <div class="modal fade action-sheet" id="filterDay">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Set a custom due date</span>
+                    <span class="icon-cancel" data-bs-dismiss="modal"></span>
+                </div>
+                <ul class="pb-12 line-bt">
+                    <li><div class="d-flex justify-content-between align-items-center gap-8 text-large item-check">10 minutes <i class="icon icon-check-circle"></i> </div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check">30 minutes <i class="icon icon-check-circle"></i></div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check">1 hour <i class="icon icon-check-circle"></i></div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check  active">1 day <i class="icon icon-check-circle"></i></div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check">3 day <i class="icon icon-check-circle"></i></div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check">7 day <i class="icon icon-check-circle"></i></div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check">1 month <i class="icon icon-check-circle"></i></div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check">3 month <i class="icon icon-check-circle"></i></div></li>
+                    <li class="mt-4"><div class="d-flex  justify-content-between gap-8 text-large item-check">Custom <i class="icon icon-check-circle"></i></div></li>
+                </ul>
+                <a href="javascript:void(0);" class="item-check text-center text-button fw-6" data-bs-dismiss="modal">Cancel</a>
+            </div>    
+        </div>
+    </div>
+
+     <!-- account -->
+     <div class="modal fade action-sheet" id="accountWallet">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Wallet</span>
+                    <span class="icon-cancel" data-bs-dismiss="modal"></span>
+                </div>
+                <ul class="mt-20 pb-16">
+                    <li data-bs-dismiss="modal">
+                        <div class="gap-2 align-items-center d-flex justify-content-start align-items-center gap-8 text-large item-check active item-checkk">
+                            <div
+                                class="dom-value">
+                                WLB
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-center gap-8 text-large item-check dom-header-value">
+                                Wallet Balance <i class="icon icon-check-circle"></i> 
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="mt-4" data-bs-dismiss="modal">
+                        <div class="gap-2 align-items-center d-flex justify-content-start align-items-center gap-8 text-large item-check item-checkk">
+                            <div
+                                class="dom-value">
+                                RFB
+                            </div>
+                            <div class="d-flex  justify-content-between gap-8 text-large item-check dom-header-value">Referral Balance<i
+                                class="icon icon-check-circle"></i>
+                            </div>
+                        </div>
+                       
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+     <div class="modal fade action-sheet" id="accountWallet2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span>Wallet</span>
+                    <span class="icon-cancel" data-bs-dismiss="modal"></span>
+                </div>
+                <ul class="mt-20 pb-16">
+                    <li data-bs-dismiss="modal">
+                        <div class="gap-2 align-items-center d-flex justify-content-start align-items-center gap-8 text-large item-check item-checkkk">
+                            <div
+                                class="dom-valuee">
+                                WLB
+                            </div>
+                            <div
+                                class="d-flex justify-content-between align-items-center gap-8 text-large item-check dom-header-valuee">
+                                Wallet Balance <i class="icon icon-check-circle"></i> 
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li class="mt-4" data-bs-dismiss="modal">
+                        <div class="gap-2 align-items-center d-flex justify-content-start align-items-center gap-8 text-large active item-check item-checkkk">
+                            <div
+                                class="dom-valuee">
+                                RFB
+                            </div>
+                            <div class="d-flex justify-content-between gap-8 text-large item-check dom-header-valuee">Referral Balance<i
+                                class="icon icon-check-circle"></i>
+                            </div>
+                        </div>
+                       
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <style>
+        table th, table tbody {
+            color: white;
+        }
+    </style>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/apexcharts.js"></script>
+    <script type="text/javascript" src="js/chart.bundle.min.js"></script>
+    <script type="text/javascript" src="js/detail-chart.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            $("#inputField").on("input", function () {
+                let inputValue = $(this).val(); // Get input value
+                $("#outputDiv").text(inputValue); // Update div with input value
+            });
+        });
+
+        $(document).ready(function () {
+            $("#inputField1").on("input", function () {
+                let inputValue1 = $(this).val(); // Get input value
+                $("#inputReceiver").text(inputValue1); // Update div with input value
+            });
+        });
+
+        $(document).ready(function () {
+            $("#swap-btn").click(function () {
+                let amount = Math.floor(Math.random() * 100) + 1; // Random amount for demo
+                let fromBalance = Math.random() > 0.5 ? "Wallet Balance" : "Referral Balance"; // Randomize from balance
+                let toBalance = fromBalance === "Wallet Balance" ? "Referral Balance" : "Wallet Balance"; // Swap logic
+                let timestamp = new Date().toLocaleString(); // Get current time
+        
+                // Append swap record to table
+                $("#swap-history").prepend(`
+                    <tr>
+                        <td>$${amount}</td>
+                        <td>${fromBalance}</td>
+                        <td>${toBalance}</td>
+                        <td>${timestamp}</td>
+                    </tr>
+                `);
+            });
+        });
+        </script>
+        
+        
+</body>
+</html>
