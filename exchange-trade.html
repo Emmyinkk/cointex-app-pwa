@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>earn</title>
+    <title>swap</title>
 </head>
 
 <body class="app-wallet">
@@ -24,7 +24,7 @@
     <div class="header-style2 fixed-top d-flex align-items-center justify-content-between bg-surface">
         <h3 class="d-flex gap-12">
             <!-- <a href="exchange-market.html" class="text-secondary">Market</a> -->
-            <a href="#">Earn</a>
+            <a href="#">Swap</a>
         </h3>
         <i class="icon-question text-white"></i>
     </div>
@@ -35,7 +35,7 @@
                     <ul class="nav nav-tabs wallet-tabs" role="tablist" >
                         <li class="item-slide-effect"></li>
                         <li class="nav-item active" role="presentation">   
-                            <button class="nav-link active"  data-bs-toggle="tab" data-bs-target="#link">Convert & Link</button>
+                            <button class="nav-link active"  data-bs-toggle="tab" data-bs-target="#link">Convert</button>
                         </li>
                         <li class="nav-item" role="presentation">
 							<button class="nav-link" data-bs-toggle="tab" data-bs-target="#order">Voucher</button>
@@ -50,8 +50,7 @@
                                     <p class="text-white">Pay</p>
                                     <p class="d-flex align-items-center gap-20">
                                         <span class="d-flex align-items-center gap-4">
-                                            <i class="icon-wallet fs-24"></i>
-                                            5,988
+                                            $5,988
                                         </span>
                                         <span class="text-primary">Max</span>
                                     </p>
@@ -78,9 +77,8 @@
                             <div class="accent-box bg-menuDark mt-8">
                                 <div class="text-small d-flex justify-content-between">
                                     <p class="text-white">Receive</p>
-                                    <span class="d-flex align-items-center gap-4">
-                                        <i class="icon-wallet fs-24"></i>
-                                        0,031025
+                                    <span class="">
+                                        $3,1025
                                     </span>
                                 </div>
                                 <div class="coin-item style-1 gap-8 mt-20">
@@ -133,8 +131,7 @@
                                     <p class="text-white">Pay</p>
                                     <p class="d-flex align-items-center gap-20">
                                         <span class="d-flex align-items-center gap-4">
-                                            <i class="icon-wallet fs-24"></i>
-                                            5,988
+                                            $5,988
                                         </span>
                                         <span class="text-primary">Max</span>
                                     </p>
@@ -149,7 +146,6 @@
                                             <span class="dom-text">Wallet Balance</span>
                                         </div>
                                         <div class="box-price text-end d-flex flex-column gap-2">
-                                            <span>$9.357,1</span>
                                             <input type="text" class="border-1 mb-2" placeholder="Enter amount" id="inputField" style="max-width: 150px">
                                         </div>
                                     </div>
@@ -166,14 +162,13 @@
                                             <span>Voucher</span>
                                         </div>
                                         <div class="box-price text-end">
-                                            <!-- <p>$6,24 (-99,93%)</p> -->
                                             <h3 class="mb-4" id="outputDiv"></h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button class="mt-20 tf-btn lg dark text-secondary btn">Generate Voucher</button>
+                        <button class="mt-20 tf-btn lg text-light">Generate Voucher</button>
                         <ul class="mt-4 accent-box bg-menuDark">
                             <li class="trade-list-item">
                                  <p class="text-xsmall">Voucher details</p>
@@ -196,41 +191,43 @@
                             </li>
                          
                         </ul>
-                        <div class="p-2 line-border accent-box mt-20">
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Amount</th>
-                                        <th>Voucher</th>
-                                        <th>From</th>
-                                        <th>To</th>
-                                        <th>Timestamp</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="swap-history">
-                                    <tr>
-                                        <td>$100</td>
-                                        <td>1234567890</td>
-                                        <td>Wallet Balance</td>
-                                        <td>Voucher</td>
-                                        <td>2/2/2025, 11:17:50 AM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>$50</td>
-                                        <td>4567890321</td>
-                                        <td>Referral Balance</td>
-                                        <td>Voucher</td>
-                                        <td>2/1/2025, 09:17:50 AM</td>
-                                    </tr>
-                                    <tr>
-                                        <td>$150</td>
-                                        <td>0192837465</td>
-                                        <td>Wallet Balance</td>
-                                        <td>Voucher</td>
-                                        <td>7/5/2025, 08:25:50 AM</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="p-2 line-border accent-box mt-20 w-100">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Amount</th>
+                                            <th>Voucher</th>
+                                            <th>From</th>
+                                            <th>To</th>
+                                            <th>Timestamp</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="swap-history">
+                                        <tr>
+                                            <td>$100</td>
+                                            <td>1234567890</td>
+                                            <td>Wallet Balance</td>
+                                            <td>Voucher</td>
+                                            <td>2/2/2025, 11:17:50 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$50</td>
+                                            <td>4567890321</td>
+                                            <td>Referral Balance</td>
+                                            <td>Voucher</td>
+                                            <td>2/1/2025, 09:17:50 AM</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$150</td>
+                                            <td>0192837465</td>
+                                            <td>Wallet Balance</td>
+                                            <td>Voucher</td>
+                                            <td>7/5/2025, 08:25:50 AM</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 					</div>
 				</div>
@@ -570,6 +567,13 @@
     <style>
         table th, table tbody {
             color: white;
+        }
+        .tf-btn:hover {
+            color: var(--primary)!important;
+        }
+        .tab-slide.trade-tab .nav-link.active, .tab-slide.trade-tab .item-slide-effect {
+            background: var(--primary);
+            border: var(--primary);
         }
     </style>
 
