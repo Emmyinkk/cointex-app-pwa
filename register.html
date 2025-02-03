@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet"type="text/css" href="css/styles.css"/>
 
+     <!-- intl-tel-input CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+    
+     <!-- intl-tel-input JS -->
+     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> -->
+
    
     <!-- Favicon and Touch Icons  -->
     <link rel="shortcut icon" href="images/logo/48.png" />
@@ -31,33 +37,36 @@
     <div class="header fixed-top bg-surface">
         <a href="#" class="left back-btn"><i class="icon-left-btn"></i></a>
     </div>
-    <div class="pt-45">
+    <div class="pt-45 pb-80">
         <div class="tf-container">
             <form action="otp.html" class="mt-32 mb-16">
                 <h2 class="text-center">Register on <span class="text-success">Hedge</span></h2>
                 <fieldset class="mt-40">
                     <label class="label-ip">
-                        <p class="mb-8 text-small">Username</p>
+                        <select name="country" id="countrySelect">
+                            <option value="">Select a country</option>
+                        </select>
+                    </label>
+                </fieldset>
+                <fieldset class="mt-16">
+                    <label class="label-ip">
+                        <input type="text" placeholder="Phone number" id="phone" name="phone" class="w-100">
+                    </label>
+                </fieldset>
+                <fieldset class="mt-16">
+                    <label class="label-ip">
                         <input type="text" placeholder="Username">
                     </label>
                 </fieldset>
                 <fieldset class="mt-16">
                     <label class="label-ip">
-                        <p class="mb-8 text-small">Email</p>
                         <input type="text" placeholder="Example@gmail">
                     </label>
                 </fieldset>
                 <fieldset class="mt-16">
                     <label class="label-ip">
-                        <p class="mb-8 text-small">Phone Number</p>
-                        <input type="text" placeholder="Phone number">
-                    </label>
-                </fieldset>
-                <fieldset class="mt-16">
-                    <label class="label-ip">
-                        <p class="mb-8 text-small">Password</p>
                         <div class="box-auth-pass">
-                            <input type="password" required placeholder="6 -20 characters" class="password-field">
+                            <input type="password" required placeholder="Enter password 6 -20 characters" class="password-field">
                             <span class="show-pass">
                                 <i class="icon-view"></i>
                                 <i class="icon-view-hide"></i>
@@ -67,8 +76,7 @@
                 </fieldset>
                 <fieldset class="mt-16">
                     <label class="label-ip">
-                        <p class="mb-8 text-small">Referral code (optional)</p>
-                        <input type="text" required placeholder="Referral code">
+                        <input type="text" required placeholder="Referral code (optional)">
                     </label>
                 </fieldset>
                 <fieldset class="group-cb cb-signup mt-12">
@@ -82,11 +90,112 @@
     </div>
 
 
+    <style>
+        .iti {
+            width: 100%;
+        }
+        .iti__flag {
+            display: none !important;
+        }
+        select {
+            color: var(--secondary);
+        }
+    </style>
 
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 
-    
+     <!-- intl-tel-input JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+
+     <!-- Country list -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let input = document.querySelector("#phone");
+            let countrySelect = document.querySelector("#countrySelect");
+
+            // Initialize phone input
+            let iti = window.intlTelInput(input, {
+                separateDialCode: true, // Show only the country code
+                utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+            });
+
+            // Populate country dropdown with US and China first
+            let countryData = window.intlTelInputGlobals.getCountryData();
+            let priorityCountries = [
+                { name: "United States", iso2: "us", dialCode: "+1" },
+                { name: "China", iso2: "cn", dialCode: "+86" }
+            ];
+
+            priorityCountries.forEach(country => {
+                let option = document.createElement("option");
+                option.value = country.iso2;
+                option.textContent = `${country.name} (${country.dialCode})`;
+                countrySelect.appendChild(option);
+            });
+
+            // Add separator
+            let separator = document.createElement("option");
+            separator.disabled = true;
+            separator.textContent = "──────────";
+            countrySelect.appendChild(separator);
+
+            // Add remaining countries in alphabetical order
+            countryData
+                .filter(country => country.iso2 !== "us" && country.iso2 !== "cn")
+                .sort((a, b) => a.name.localeCompare(b.name))
+                .forEach(country => {
+                    let option = document.createElement("option");
+                    option.value = country.iso2;
+                    option.textContent = `${country.name} (+${country.dialCode})`;
+                    countrySelect.appendChild(option);
+                });
+
+            // Set default country based on IP
+            fetch("https://ipapi.co/json/")
+                .then(response => response.json())
+                .then(data => {
+                    let userCountry = data.country_code.toLowerCase();
+                    iti.setCountry(userCountry);
+                    countrySelect.value = userCountry;
+                })
+                .catch(() => {
+                    iti.setCountry("us"); // Fallback to US if IP lookup fails
+                    countrySelect.value = "us";
+                });
+
+            // Change phone input country code when selecting a country
+            countrySelect.addEventListener("change", function () {
+                iti.setCountry(this.value);
+            });
+        });
+    </script>
+
+     <!-- <script>
+         document.addEventListener("DOMContentLoaded", function() {
+             let input = document.querySelector("#phone");
+ 
+             // Initialize phone input
+             let iti = window.intlTelInput(input, {
+                 separateDialCode: true, // Show only the country code
+                 utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"
+             });
+ 
+             // Fetch user's country based on IP
+             fetch("https://ipapi.co/json/")
+                 .then(response => response.json())
+                 .then(data => {
+                     let userCountry = data.country_code.toLowerCase(); // Get country code (e.g., "US")
+                     iti.setCountry(userCountry);
+                 })
+                 .catch(() => {
+                     iti.setCountry("us"); // Fallback to US if IP lookup fails
+                 });
+         });
+     </script> -->
+
 </body>
 </html>
