@@ -2911,7 +2911,8 @@ input[type=text].ip-style2 {
 }
 
 .chat-name {
-  border: 1px solid white;
+  /* border: 1px solid white; */
+  text-align: center;
 }
 
 
