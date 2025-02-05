@@ -2902,6 +2902,7 @@ input[type=text].ip-style2 {
   bottom: 100px;
   right: 10px;
   border-radius: 10px;
+  border: 1px solid white;
 }
 
 .floating-chat-icon {
