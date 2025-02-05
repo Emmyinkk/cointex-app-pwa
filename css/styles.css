@@ -2919,8 +2919,8 @@ input[type=text].ip-style2 {
 
 .chat-area {
   height: calc(100vh - 19.5em);
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .chat-img img {
@@ -3005,6 +3005,10 @@ input[type=text].ip-style2 {
 
 .typing {
   width: 15%;
+}
+
+.banner {
+  border-radius: 15px;
 }
 
 
