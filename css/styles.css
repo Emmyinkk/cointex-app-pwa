@@ -2977,5 +2977,34 @@ input[type=text].ip-style2 {
     text-align: right;
 }
 
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: grey;
+  animation: moveUpDown .8s infinite ease-in-out;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s; /* Delay the second box */
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s; /* Delay the third box */
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-4px);
+  }
+}
+
+.typing {
+  width: 15%;
+}
+
 
 /*# sourceMappingURL=styles.css.map */
