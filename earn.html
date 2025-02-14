@@ -18,7 +18,7 @@
     <link rel="shortcut icon" href="images/logo/48.png" />
     <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
 
-    <title>earn</title>
+    <title>trade</title>
 </head>
 
 <body>
@@ -31,7 +31,7 @@
     <!-- /preload -->
 
     <div class="header-style2 fixed-top d-flex align-items-center justify-content-between bg-surface">
-        <h3>Earn</h3>
+        <h3>Trade</h3>
         <!-- <i class="icon-funnel text-white" data-bs-toggle="modal" data-bs-target="#filter"></i> -->
     </div>
 
@@ -54,29 +54,43 @@
                 data-tablet="2.3" data-desktop="3">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="accent-box-v5 bg-menuDark package-box" data-target="#regularScreen">
+                        <div class="accent-box-v5 bg-menuDark package-box" data-target="#orion">
                             <span class="icon-box bg-icon1"><i class="icon-book"></i></span>
                             <div class="mt-12">
-                                <a href="#" class="text-small">Regular Package</a>
+                                <a href="#" class="text-small">Orion LLM 3.0.6</a>
                                 <ul class="mt-12 list-area">
-                                    <li>Investment Range: $5 to $500</li>
-                                    <li>Daily Earnings: 1% of capital</li>
-                                    <li>Duration: 30 days</li>
-                                    <li>Total ROI: 30% over 30 days</li>
+                                    <li>Minimum Trade: $0.1</li>
+                                    <li>Daily Earnings: 0.8% of capital</li>
+                                    <li>Duration: 25 days</li>
+                                    <li>Total ROI: 20% over 25 days</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="accent-box-v5 bg-menuDark package-box" data-target="#vipScreen">
+                        <div class="accent-box-v5 bg-menuDark package-box" data-target="#astra">
                             <span class="icon-box bg-icon2"><i class="icon-wallet-money"></i></span>
                             <div class="mt-12">
-                                <a href="#" class="text-small mb-14">VIP Package</a>
+                                <a href="#" class="text-small mb-14">Astra HJU 6.9.4</a>
                                 <ul class="mt-12 list-area">
-                                    <li>Investment Range: $500 to $5000</li>
-                                    <li>Daily Earnings: 1.3% of capital</li>
-                                    <li>Duration: 40 days</li>
-                                    <li>Total ROI: 52% over 40 days</li>
+                                    <li>Minimum Trade: $0.1</li>
+                                    <li>Daily Earnings: 1.2% of capital</li>
+                                    <li>Duration: 37 days</li>
+                                    <li>Total ROI: 44.4% over 37 days</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="accent-box-v5 bg-menuDark package-box" data-target="#quantum">
+                            <span class="icon-box bg-icon2"><i class="icon-wallet-money"></i></span>
+                            <div class="mt-12">
+                                <a href="#" class="text-small mb-14">Quantum TQ 2.7.3</a>
+                                <ul class="mt-12 list-area">
+                                    <li>Minimum Trade: $0.1</li>
+                                    <li>Daily Earnings: 1.5% of capital</li>
+                                    <li>Duration: 50 days</li>
+                                    <li>Total ROI: 75% over 50 days</li>
                                 </ul>
                             </div>
                         </div>
@@ -85,8 +99,8 @@
             </div>
             <h5 class="mt-20">Wallet Bal : $2,568</h5>
             <div class="mt-20">
-                <div class="hide target-screen" id="regularScreen">
-                    <h6 class="mb-2">Regular Package</h6>
+                <div class="hide target-screen" id="orion">
+                    <h6 class="mb-2">Orion LLM 3.0.6</h6>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quidem veniam nihil id possimus. Non debitis a, vel quaerat voluptatum reiciendis, quis earum iste tenetur explicabo quidem aliquid excepturi deleniti.</p>
                     <div class="mt-20 search-box box-input-field">
                         <!-- <a href="home-search.html" ></a> -->
@@ -107,7 +121,7 @@
                         Weekly Earnings : <b id="weekly">0</b>
                     </div>
                     <div class="mt-12">
-                        30 Days Earnings : <b id="monthly">0</b>
+                        25 Days Earnings : <b id="monthly">0</b>
                     </div>
                     <div class="mt-12">
                         Total Earnings : <b id="total">0</b>
@@ -118,8 +132,8 @@
                 </div>
 
 
-                <div class="hide target-screen" id="vipScreen">
-                    <h6 class="mb-2">Vip Package</h6>
+                <div class="hide target-screen" id="astra">
+                    <h6 class="mb-2">Astra HJU 6.9.4</h6>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quidem veniam nihil id possimus. Non debitis a, vel quaerat voluptatum reiciendis, quis earum iste tenetur explicabo quidem aliquid excepturi deleniti.</p>
                     <div class="mt-20 search-box box-input-field">
                         <!-- <a href="home-search.html" ></a> -->
@@ -140,10 +154,43 @@
                         Weekly Earnings : <strong id="vip-weekly">0</strong>
                     </div>
                     <div class="mt-12">
-                        40 Days Earning : <strong id="vip-monthly">0</strong>
+                        37 Days Earning : <strong id="vip-monthly">0</strong>
                     </div>
                     <div class="mt-12">
                         Total Earnings : <strong id="vip-total">0</strong>
+                    </div>
+                    <div class="mt-12">
+                        <button class="btn btn-success">Confirm</button>
+                    </div>
+                </div>
+
+
+                <div class="hide target-screen" id="quantum">
+                    <h6 class="mb-2">Quantum TQ 2.7.3</h6>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quidem veniam nihil id possimus. Non debitis a, vel quaerat voluptatum reiciendis, quis earum iste tenetur explicabo quidem aliquid excepturi deleniti.</p>
+                    <div class="mt-20 search-box box-input-field">
+                        <!-- <a href="home-search.html" ></a> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                            class="icon-search" fill="rgba(126,128,136,1)">
+                            <path
+                                d="M3.00488 3.00275H21.0049C21.5572 3.00275 22.0049 3.45046 22.0049 4.00275V20.0027C22.0049 20.555 21.5572 21.0027 21.0049 21.0027H3.00488C2.4526 21.0027 2.00488 20.555 2.00488 20.0027V4.00275C2.00488 3.45046 2.4526 3.00275 3.00488 3.00275ZM4.00488 5.00275V19.0027H20.0049V5.00275H4.00488ZM8.50488 14.0027H14.0049C14.281 14.0027 14.5049 13.7789 14.5049 13.5027C14.5049 13.2266 14.281 13.0027 14.0049 13.0027H10.0049C8.62417 13.0027 7.50488 11.8835 7.50488 10.5027C7.50488 9.12203 8.62417 8.00275 10.0049 8.00275H11.0049V6.00275H13.0049V8.00275H15.5049V10.0027H10.0049C9.72874 10.0027 9.50488 10.2266 9.50488 10.5027C9.50488 10.7789 9.72874 11.0027 10.0049 11.0027H14.0049C15.3856 11.0027 16.5049 12.122 16.5049 13.5027C16.5049 14.8835 15.3856 16.0027 14.0049 16.0027H13.0049V18.0027H11.0049V16.0027H8.50488V14.0027Z">
+                            </path>
+                        </svg>
+                        <input type="tel" placeholder="Enter your amount" required class="clear-ip mb-0" id="quan"
+                            style="max-width: 500px">
+                        <!-- <i class="icon-close"></i> -->
+                    </div>
+                    <div class="mt-12">
+                        Daily Earnings : <strong id="q-daily">0</strong>
+                    </div>
+                    <div class="mt-12">
+                        Weekly Earnings : <strong id="q-weekly">0</strong>
+                    </div>
+                    <div class="mt-12">
+                        50 Days Earning : <strong id="q-monthly">0</strong>
+                    </div>
+                    <div class="mt-12">
+                        Total Earnings : <strong id="q-total">0</strong>
                     </div>
                     <div class="mt-12">
                         <button class="btn btn-success">Confirm</button>
@@ -180,7 +227,7 @@
             <li class="active">
                 <a href="earn.html">
                     <i class="icon icon-earn"></i>
-                    Earn
+                    Trade
                 </a>
             </li>
             <li>
@@ -350,15 +397,15 @@
         $(document).ready(function () {
             $("#investment").on("input", function () {
                 let amount = parseFloat($(this).val()) || 0; // Get input value
-                let daily = amount * 0.01;
-                let weekly = amount * 0.07;
-                let monthly = amount * 0.30;
-                let total = amount * 1.30;
+                let daily = amount * 0.008;
+                let weekly = amount * 0.056;
+                let monthly = amount * 1.2;
+                let total = amount * 1.2;
 
                 // Update displayed values
                 $("#daily").text(`$${daily.toFixed(2)}`);
                 $("#weekly").text(`$${weekly.toFixed(2)}`);
-                $("#monthly").text(`$${monthly.toFixed(2)}`);
+                $("#monthly").text(`$${total.toFixed(2)}`);
                 $("#total").text(`$${total.toFixed(2)}`);
             });
         });   
@@ -367,16 +414,33 @@
         $(document).ready(function () {
             $("#vipInvestment").on("input", function () {
                 let amount = parseFloat($(this).val()) || 0; // Get input value
-                let daily = amount * 0.013;
-                let weekly = amount * 0.091;
-                let monthly = amount * 0.52;
-                let total = amount * 1.52;
+                let daily = amount * 0.012;
+                let weekly = amount * 0.084;
+                let monthly = amount * 0.336;
+                let total = amount * 1.444;
 
                 // Update displayed values
                 $("#vip-daily").text(`$${daily.toFixed(2)}`);
                 $("#vip-weekly").text(`$${weekly.toFixed(2)}`);
                 $("#vip-monthly").text(`$${monthly.toFixed(2)}`);
                 $("#vip-total").text(`$${total.toFixed(2)}`);
+            });
+        });   
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#quan").on("input", function () {
+                let amount = parseFloat($(this).val()) || 0; // Get input value
+                let daily = amount * 0.015;
+                let weekly = amount * 0.105;
+                let monthly = amount * 0.42;
+                let total = amount * 1.75;
+
+                // Update displayed values
+                $("#q-daily").text(`$${daily.toFixed(2)}`);
+                $("#q-weekly").text(`$${weekly.toFixed(2)}`);
+                $("#q-monthly").text(`$${monthly.toFixed(2)}`);
+                $("#q-total").text(`$${total.toFixed(2)}`);
             });
         });   
     </script>
