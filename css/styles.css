@@ -3011,5 +3011,29 @@ input[type=text].ip-style2 {
   border-radius: 15px;
 }
 
+.lg-image {
+  width: auto;
+  height: 100px;
+}
+.tab-content.chat-one {
+  max-height: 35vh;
+}
+
+.btn_island {
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 380px) {
+  .lg-image {
+    width: auto;
+    height: 60px;
+  }
+  .tab-content.chat-one {
+    max-height: 30vh;
+  }
+  .btn_island {
+    margin-top: 0rem;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
