@@ -42,19 +42,100 @@
     </div>
 
     <div class="">    
-        <div class="tf-container chat-area bg-menuDark pt-3">
-            <div class="row banner px-3 py-4 w-100" style="background: black; margin: 0 auto;">
-                <div class="col-8">
-                    <div>
-                        <h5 class="mb-2">SBS Ai Token</h5>
-                        <p class="mb-2">Continously earn sbs ai token via trading & referrals, claim at 1000 and above.</p>
-                        <button style="max-width: 120px;">Claim</button>
+        <div class="tf-container chat-area bg-menuDark pt-3"> 
+            <div class="banner px-3 py-4 w-100" style="background: black; margin: 0 auto;">
+                <div class="row">
+                    <div class="col-8">
+                        <div>
+                            <h5 class="mb-2">SBS Ai Token</h5>
+                            <p class="mb-3">Continously earn sbs ai token via trading & referrals, claim at 1000 and above.</p>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <img src="images/avt/logo.png" alt="img" class="">
                     </div>
                 </div>
-                <div class="col-4">
-                    <img src="images/avt/logo.png" alt="img" class="">
+                <div class="d-flex align-items-center gap-2 mt-5">
+                    <button class="px-0">Airdrop Bal: &nbsp;<span>25,670</span>&nbsp; SBS</button>
+                    <button style="max-width: 90px;"><a href="#" class="choose-account" data-bs-toggle="modal"
+                        data-bs-target="#accountWallet">Claim</button>
                 </div>
             </div>
+
+            <div class="bg-menuDark tf-container">
+                <div class="pt-12 pb-12 mt-4">
+                  <div class="wrap-filter-swiper">
+                    <!-- <h5><a href="cryptex-rating.html" class="cryptex-rating"></a> -->
+                    </h5>
+                    <div class="swiper-wrapper1 menu-tab-v3 mt-12" role="tablist">
+                      <div class="swiper-slide1 nav-link" data-bs-toggle="tab" data-bs-target="#popular" role="tab"
+                        aria-controls="popular" aria-selected="false">
+                        Airdrop Hx
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-content mt-8">
+                    <div class="tab-pane fade show active" id="popular" role="tabpanel">
+                      <ul class="mt-4">
+                        <li>
+                          <a href="#" class="coin-item style-1 gap-12 bg-menuDark">
+                            <div class="content">
+                              <div class="title">
+                                <p class="mb-4 text-large">Signup bonus</p>
+                                <span class="text-secondary">11:34 AM</span>
+                              </div>
+                              <div class="box-price">
+                                <p class="text-small mb-4"><span class="text-primary">+</span> 1000 SBS
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="mt-8">
+                          <a href="#" class="coin-item style-1 gap-12 bg-menuDark">
+                            <div class="content">
+                              <div class="title">
+                                <p class="mb-4 text-large">Trade Bonus</p>
+                                <span class="text-secondary">1:12 PM</span>
+                              </div>
+          
+                              <p class="text-small"><span class="text-primary">+</span> 1000 SBS</p>
+                            </div>
+                          </a>
+                        </li>
+                        <li class="mt-8">
+                          <a href="#" class="coin-item style-1 gap-12 bg-menuDark">
+                            <div class="content">
+                              <div class="title">
+                                <p class="mb-4 text-large">Referral Bonus</p>
+                                <span class="text-secondary">12:00 AM</span>
+                              </div>
+                              <div class="box-price">
+                                <p class="text-small"><span class="text-primary">+</span> 1000 SBS</p>
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="coin-item style-1 gap-12 bg-menuDark">
+                            <div class="content">
+                              <div class="title">
+                                <p class="mb-4 text-large">Claimed</p>
+                                <span class="text-secondary">11:34 AM</span>
+                              </div>
+                              <div class="box-price">
+                                <p class="text-small mb-4"><span class="text-red">-</span> 5000 SBS
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
             
             <div class="menubar-footer footer-fixed">
                 <div class="inner-bar">
@@ -65,6 +146,23 @@
     </div>
 
 
+    <div class="modal fade action-sheet" id="accountWallet">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content py-5 px-1">
+            <div class="modal-header">
+              <h5>Amount to claim: 2000 SBS</h5>
+              <span class="icon-cancel" data-bs-dismiss="modal"></span>
+            </div>
+            <input type="text" placeholder="Input your wallet address">
+          </div>
+    
+        </div>
+      </div>
+    <style>
+        button span {
+            font-size: 18px;
+        }
+    </style>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
