@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, viewport-fit=cover">
+    <!-- font -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="fonts/font-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+
+    <!-- Favicon and Touch Icons  -->
+    <link rel="shortcut icon" href="images/logo/48.png" />
+    <link rel="apple-touch-icon-precomposed" href="images/logo/48.png" />
+
+    <title>task</title>
+</head>
+
+<body>
+    <!-- preloade -->
+    <!-- <div class="preload preload-container">
+        <div class="preload-logo" style="background-image: url('images/logo/144.png')">
+          <div class="spinner"></div>
+        </div>
+      </div> -->
+    <!-- /preload -->
+
+    <div class="header-style2 fixed-top d-flex align-items-center justify-content-between bg-surface">
+        <h3 class="d-flex gap-12">
+            <a href="#">Task</a>
+            <!-- <a href="exchange-trade.html" class="text-secondary">Trade</a> -->
+        </h3>
+        <i class="icon-funnel text-white" data-bs-toggle="modal" data-bs-target="#filter"></i>
+    </div>
+    <div class="pt-55 pb-80">
+        <div class="tf-container">
+            <div class="row d-flex">
+                <div class="col-4 d-flex flex-column">
+                    <div class="bg-menuDark p-2 rounded-3 flex-grow-1 d-flex flex-column justify-content-between">
+                        No of jobs available
+                        <span>3</span>
+
+                    </div>
+                </div>
+                <div class="col-4 d-flex flex-column">
+                    <div class="bg-menuDark p-2 rounded-3 flex-grow-1 d-flex flex-column justify-content-between">
+                        No of jobs Done
+                        <span>2</span>
+                    </div>
+                </div>
+                <div class="col-4 d-flex flex-column">
+                    <div class="bg-menuDark p-2 rounded-3 flex-grow-1 d-flex flex-column justify-content-between">
+                        Total earned
+                        <span>500</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mt-24">
+                <div class="bg-menuDark p-3 rounded-3 mb-3 position-relative">
+                    <div class="d-flex justify-content-between" data-bs-toggle="modal" data-bs-target="#notification">
+                        <div>
+                            <h5 class="mb-2">Advertising</h5>
+                            <p class="mb-2">Microsoft</p>
+                            <p class="d-flex justify-content-between">
+                                <span>Unit Price</span>
+                                <span>50</span>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/avt/logo.png" alt="" class="work-image">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bg-menuDark p-3 rounded-3 mb-3 position-relative" data-bs-toggle="modal" data-bs-target="#notification">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h5 class="mb-2">Advertising</h5>
+                            <p class="mb-2">ASUS</p>
+                            <p class="d-flex justify-content-between">
+                                <span>Unit Price</span>
+                                <span>50</span>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/avt/logo.png" alt="" class="work-image">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bg-menuDark p-3 rounded-3 mb-3 position-relative" data-bs-toggle="modal" data-bs-target="#notification">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <h5 class="mb-2">Advertising</h5>
+                            <p class="mb-2">Google</p>
+                            <p class="d-flex justify-content-between">
+                                <span>Unit Price</span>
+                                <span>50</span>
+                            </p>
+                        </div>
+                        <div>
+                            <img src="images/avt/logo.png" alt="" class="work-image">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menubar-footer footer-fixed">
+        <ul class="inner-bar">
+            <li>
+                <a href="index.html">
+                    <i class="icon icon-home2"></i>
+                    Home
+                </a>
+            </li>
+            <li class="active">
+                <a href="task.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                        fill="var(--primary)">
+                        <path
+                            d="M21 13.2422V20H22V22H2V20H3V13.2422C1.79401 12.435 1 11.0602 1 9.5C1 8.67286 1.22443 7.87621 1.63322 7.19746L4.3453 2.5C4.52393 2.1906 4.85406 2 5.21132 2H18.7887C19.1459 2 19.4761 2.1906 19.6547 2.5L22.3575 7.18172C22.7756 7.87621 23 8.67286 23 9.5C23 11.0602 22.206 12.435 21 13.2422ZM19 13.9725C18.8358 13.9907 18.669 14 18.5 14C17.2409 14 16.0789 13.478 15.25 12.6132C14.4211 13.478 13.2591 14 12 14C10.7409 14 9.5789 13.478 8.75 12.6132C7.9211 13.478 6.75911 14 5.5 14C5.331 14 5.16417 13.9907 5 13.9725V20H19V13.9725ZM5.78865 4L3.35598 8.21321C3.12409 8.59843 3 9.0389 3 9.5C3 10.8807 4.11929 12 5.5 12C6.53096 12 7.44467 11.3703 7.82179 10.4295C8.1574 9.59223 9.3426 9.59223 9.67821 10.4295C10.0553 11.3703 10.969 12 12 12C13.031 12 13.9447 11.3703 14.3218 10.4295C14.6574 9.59223 15.8426 9.59223 16.1782 10.4295C16.5553 11.3703 17.469 12 18.5 12C19.8807 12 21 10.8807 21 9.5C21 9.0389 20.8759 8.59843 20.6347 8.19746L18.2113 4H5.78865Z">
+                        </path>
+                    </svg>
+                    <!-- <i class="icon icon-exchange"></i> -->
+                    Task
+                </a>
+            </li>
+            <li>
+                <a href="package.html">
+                    <i class="icon icon-earn"></i>
+                    Packages
+                </a>
+            </li>
+            <li>
+                <a href="teams.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                        fill="rgba(126,128,136,1)">
+                        <path
+                            d="M12 11C14.7614 11 17 13.2386 17 16V22H15V16C15 14.4023 13.7511 13.0963 12.1763 13.0051L12 13C10.4023 13 9.09634 14.2489 9.00509 15.8237L9 16V22H7V16C7 13.2386 9.23858 11 12 11ZM5.5 14C5.77885 14 6.05009 14.0326 6.3101 14.0942C6.14202 14.594 6.03873 15.122 6.00896 15.6693L6 16L6.0007 16.0856C5.88757 16.0456 5.76821 16.0187 5.64446 16.0069L5.5 16C4.7203 16 4.07955 16.5949 4.00687 17.3555L4 17.5V22H2V17.5C2 15.567 3.567 14 5.5 14ZM18.5 14C20.433 14 22 15.567 22 17.5V22H20V17.5C20 16.7203 19.4051 16.0796 18.6445 16.0069L18.5 16C18.3248 16 18.1566 16.03 18.0003 16.0852L18 16C18 15.3343 17.8916 14.694 17.6915 14.0956C17.9499 14.0326 18.2211 14 18.5 14ZM5.5 8C6.88071 8 8 9.11929 8 10.5C8 11.8807 6.88071 13 5.5 13C4.11929 13 3 11.8807 3 10.5C3 9.11929 4.11929 8 5.5 8ZM18.5 8C19.8807 8 21 9.11929 21 10.5C21 11.8807 19.8807 13 18.5 13C17.1193 13 16 11.8807 16 10.5C16 9.11929 17.1193 8 18.5 8ZM5.5 10C5.22386 10 5 10.2239 5 10.5C5 10.7761 5.22386 11 5.5 11C5.77614 11 6 10.7761 6 10.5C6 10.2239 5.77614 10 5.5 10ZM18.5 10C18.2239 10 18 10.2239 18 10.5C18 10.7761 18.2239 11 18.5 11C18.7761 11 19 10.7761 19 10.5C19 10.2239 18.7761 10 18.5 10ZM12 2C14.2091 2 16 3.79086 16 6C16 8.20914 14.2091 10 12 10C9.79086 10 8 8.20914 8 6C8 3.79086 9.79086 2 12 2ZM12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4Z">
+                        </path>
+                    </svg>
+                    Team
+                </a>
+            </li>
+            <li>
+                <a href="profile.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18"
+                        fill="rgba(126,128,136,1)">
+                        <path
+                            d="M21.0082 3C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082ZM20 5H4V19H20V5ZM18 15V17H6V15H18ZM12 7V13H6V7H12ZM18 11V13H14V11H18ZM10 9H8V11H10V9ZM18 7V9H14V7H18Z">
+                        </path>
+                    </svg>
+                    Profile
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- modal Filters-->
+    <div class="modal fade modalRight" id="notification">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="header fixed-top bg-surface d-flex justify-content-center align-items-center">
+              <span class="left" data-bs-dismiss="modal" aria-hidden="true"><i class="icon-left-btn"></i></span>
+              <h3>Task</h3>
+            </div>
+            <div class="overflow-auto pt-45 pb-16">
+              <div class="tf-container">
+                <div class="mt-12">
+                    <div class="text-center">
+                        <img src="images/avt/logo.png" alt="" class="work-image">
+                    </div>
+                    <div class="bg-menuDark rounded-2 p-3 mt-12">
+                        <h5 class="mb-2">Question</h5>
+                        <ol>
+                            <li class="mb-2">Who is the president of Nigeria</li>
+                            <div class="d-flex gap-2 align-items-center mb-2">
+                                <input type="radio" name="question1" id="question1">
+                                <label for="question1">Joe Biden</label>
+                            </div>
+                            <div class="d-flex gap-2 align-items-center">
+                                <input type="radio" name="question1" id="question2">
+                                <label for="question2">Tinubu</label>
+                            </div>
+                            
+                        </ol>
+                    </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    </div> 
+
+
+    <style>
+        .work-image {
+            width: 90px;
+            height: 90px;
+        }
+        label {
+            font-size: 12px;
+        }
+        input {
+            accent-color: var(--primary);
+        }
+    </style>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/carousel.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
