@@ -46,33 +46,32 @@
       </div>
     </div>
   </div>
-  <div class="pt-68 pb-80">    
+  <div class="pt-68">
     <div class="bg-menuDark tf-container">
       <div class="pt-12 pb-12 mt-4">
-        <h5><span class="text-primary">Hedge</span> - <a href="#" class="choose-account" data-bs-toggle="modal"
-            data-bs-target="#accountWallet"><span class="dom-text">Wallet Balance</span> &nbsp;<i
-              class="icon-select-down"></i></a> </h5>
-        <h1 class="mt-16"><a href="#">$2159,34</a></h1>
-        <ul class="mt-16 grid-4 m--16">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h6><span class="text-primary">Wallet Balance</span></h6>
+            <h3 class="mt-12"><a href="#">$2159,34</a></h3>
+          </div>
+          <div>
+            <h6><span class="text-primary">Amount Earned this month</span></h6>
+            <h3 class="mt-12"><a href="#">$2159,34</a></h3>
+          </div>
+        </div>
+        <ul class="mt-16 grid-4 mb-16">
+          <li>
+            <a href="deposit.html" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+              <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
+                  class="icon icon-way2"></i></span>
+              Recharge
+            </a>
+          </li>
           <li>
             <a href="withdraw.html" class="tf-list-item d-flex flex-column gap-8 align-items-center">
               <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
                   class="icon icon-way"></i></span>
               Withdraw
-            </a>
-          </li>
-          <li>
-            <a href="deposit.html" class="tf-list-item d-flex flex-column gap-8 align-items-center">
-              <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
-                  class="icon icon-way2"></i></span>
-              Deposit
-            </a>
-          </li>
-          <li>
-            <a href="exchange-trade.html" class="tf-list-item d-flex flex-column gap-8 align-items-center">
-              <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
-                  class="icon icon-exchange"></i></span>
-              Swap
             </a>
           </li>
           <li>
@@ -87,10 +86,45 @@
               About
             </a>
           </li>
+          <li>
+            <a href="exchange-trade.html" class="tf-list-item d-flex flex-column gap-8 align-items-center">
+              <span class="box-round bg-surface d-flex justify-content-center align-items-center"><i
+                  class="icon icon-exchange"></i></span>
+              Contact Us
+            </a>
+          </li>
         </ul>
       </div>
     </div>
 
+  </div>
+
+  <div class="pb-80 mt-4">
+    <div class="bg-menuDark tf-container py-2">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/banner/banner-faceId.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner/boarding1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/banner/boarding2.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   </div>
 
   <div class="menubar-footer footer-fixed">
@@ -103,9 +137,10 @@
       </li>
       <li>
         <a href="task.html">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="rgba(126,128,136,1)">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgba(126,128,136,1)"
+            viewBox="0 0 256 256">
             <path
-              d="M21 13.2422V20H22V22H2V20H3V13.2422C1.79401 12.435 1 11.0602 1 9.5C1 8.67286 1.22443 7.87621 1.63322 7.19746L4.3453 2.5C4.52393 2.1906 4.85406 2 5.21132 2H18.7887C19.1459 2 19.4761 2.1906 19.6547 2.5L22.3575 7.18172C22.7756 7.87621 23 8.67286 23 9.5C23 11.0602 22.206 12.435 21 13.2422ZM19 13.9725C18.8358 13.9907 18.669 14 18.5 14C17.2409 14 16.0789 13.478 15.25 12.6132C14.4211 13.478 13.2591 14 12 14C10.7409 14 9.5789 13.478 8.75 12.6132C7.9211 13.478 6.75911 14 5.5 14C5.331 14 5.16417 13.9907 5 13.9725V20H19V13.9725ZM5.78865 4L3.35598 8.21321C3.12409 8.59843 3 9.0389 3 9.5C3 10.8807 4.11929 12 5.5 12C6.53096 12 7.44467 11.3703 7.82179 10.4295C8.1574 9.59223 9.3426 9.59223 9.67821 10.4295C10.0553 11.3703 10.969 12 12 12C13.031 12 13.9447 11.3703 14.3218 10.4295C14.6574 9.59223 15.8426 9.59223 16.1782 10.4295C16.5553 11.3703 17.469 12 18.5 12C19.8807 12 21 10.8807 21 9.5C21 9.0389 20.8759 8.59843 20.6347 8.19746L18.2113 4H5.78865Z">
+              d="M173.66,98.34a8,8,0,0,1,0,11.32l-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35A8,8,0,0,1,173.66,98.34ZM224,48V208a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V48A16,16,0,0,1,48,32H208A16,16,0,0,1,224,48ZM208,208V48H48V208H208Z">
             </path>
           </svg>
           <!-- <i class="icon icon-exchange"></i> -->
@@ -114,7 +149,12 @@
       </li>
       <li>
         <a href="package.html">
-          <i class="icon icon-earn"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="rgba(126,128,136,1)"
+            viewBox="0 0 256 256">
+            <path
+              d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z">
+            </path>
+          </svg>
           Package
         </a>
       </li>
@@ -458,7 +498,18 @@
 
 
 
+  <style>
+    .carousel-inner {
+      height: 200px;
+      border-radius: 10px;
+    }
 
+    .carousel-item img {
+      object-fit: cover;
+      height: 200px;
+      object-position: center center;
+    }
+  </style>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/swiper-bundle.min.js"></script>
