@@ -2,6 +2,7 @@
   --primary: lime;
   --interactive: #0076f3;
   --white: black;
+  --black: white;
   --secondary: #7e8088;
   --secondary2: #D9D9D9;
   --surface: #DADADA;
@@ -551,6 +552,10 @@ select {
 
 .text-white {
   color: var(--white) !important;
+}
+
+.text-black {
+  color: var(--black) !important;
 }
 
 .text-red {
